@@ -1,0 +1,11 @@
+package ReadWrite
+import scala.io.Source
+
+object Input {
+  def main(args: Array[String]): Unit = {
+		var sour = Source.stdin
+//    var file = new file()\
+    println(sour.mkString)
+    sour.close()
+  }
+}

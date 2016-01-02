@@ -1,0 +1,16 @@
+
+class person{
+  def show(){
+    println("I'm kobe")
+  }
+}
+
+class student extends person{
+  
+}
+object Override {
+  var lf = new person
+  var ll = new student
+  lf.show()
+  ll.show()
+}

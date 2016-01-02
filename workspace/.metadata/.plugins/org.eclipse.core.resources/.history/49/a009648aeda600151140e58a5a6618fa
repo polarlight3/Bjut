@@ -1,0 +1,12 @@
+package ReadWrite
+import scala.io.Source
+
+object Input {
+  def main(args: Array[String]): Unit = {
+//    var source1 = Source.fromURI("http://horstamn.com")
+    var source2 = Source.fromString("Hello world~")
+		var sour = Console.readLine()
+
+    println(sour.getClass)
+  }
+}

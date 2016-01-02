@@ -1,0 +1,10 @@
+package Spark
+
+object Tu {
+  def main(args: Array[String]): Unit = {
+    var tu = (1, 3.25, "kobe") 
+    println(tu)
+    var (a1, a2, a3) = tu
+    println(a1, a2, a3)
+  }
+}

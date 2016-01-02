@@ -1,0 +1,12 @@
+package Reset
+
+class T1[-T, +R]{
+  def showIn(a:T){println(a.getClass())}
+  def showOut(b:R){println(b.getClass())}
+}
+
+object Pair {
+  def main(args: Array[String]): Unit = {
+    
+  }
+}

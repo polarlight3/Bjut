@@ -1,0 +1,19 @@
+package Actor
+
+import scala.actors.OutputChannel
+import scala.actors.Actor
+
+case class Compute (imput:Seq[Int], result: OutputChannel[Int])
+
+class Computer extends Actor{
+  public void act() {
+    while(true)
+      receive{
+        case Compute(input, out) => { val answer = "hello"; out ! answer}
+      }
+  }
+}
+
+object Compute {
+  
+}

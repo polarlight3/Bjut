@@ -1,0 +1,16 @@
+package Spark
+
+object Tu {
+  def main(args: Array[String]): Unit = {
+    var tu = (1, 3.25, "kobe") 
+    println(tu)
+    var (a1, _, a2) = tu
+    println(a1 + " " + a2)
+    val name = Array("kobe", "james", "curry")
+    val num = Array(24, 23, 30)
+    val pairs = name.zip(num)
+    for((k, v) <- pairs)    
+      println(k, v)
+    println(pairs.toMap)
+  }
+}

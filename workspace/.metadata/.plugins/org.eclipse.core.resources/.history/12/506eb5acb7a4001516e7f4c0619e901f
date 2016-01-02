@@ -1,0 +1,39 @@
+package Class
+
+class Person(_name: String, _age: Int){
+  private var name = ""
+  private var age = 0
+  def Person(){
+    this.age = _age
+    this.name = _name
+  }
+  def show(){
+    println("name : " + name +  "\n age : " + age)
+  }
+}
+
+class Student(_name: String, _age: Int, _num: Int) extends Person(_name, _age){
+  private var name = ""
+  private var age = 0
+  private var num = 0
+  def Student(name: String, age: Int, num: Int){
+ 
+    this.num = num
+  }
+  override def show(){
+    println("name : " + name +  "\n age : " + age + "\n num" + num)
+  }
+}
+
+class Gradute(_name : String, _age: Int, _num: Int, _work: String){
+  private var name = ""
+  private var age = 0
+  private var num = 0
+  private var work = ""
+}
+
+object Tea {
+  def main(args: Array[String]): Unit = {
+    
+  }
+}
