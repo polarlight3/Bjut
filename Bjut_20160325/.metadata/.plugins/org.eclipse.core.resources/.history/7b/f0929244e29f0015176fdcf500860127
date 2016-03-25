@@ -1,0 +1,11 @@
+
+
+package Class
+
+object Extends extends Enumeration{
+  def main(args: Array[String]): Unit = {
+		  val Red, Yellow, Green = Value
+				  println("This is test.")
+    
+  }
+}

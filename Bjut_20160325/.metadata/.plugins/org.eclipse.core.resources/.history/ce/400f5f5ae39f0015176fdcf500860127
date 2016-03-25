@@ -1,0 +1,18 @@
+package Class
+
+import TrafficLightColor._
+
+object Extends extends Enumeration{
+  def doWhat(a:Extends){
+    if(a == Red) {println("red")}
+    else if(a == Yellow) {println("yellow")}
+    else {println("green")}
+  }
+  
+  def main(args: Array[String]): Unit = {
+		  val Red, Yellow, Green = Value
+				 
+		  println(Red)
+    
+  }
+}

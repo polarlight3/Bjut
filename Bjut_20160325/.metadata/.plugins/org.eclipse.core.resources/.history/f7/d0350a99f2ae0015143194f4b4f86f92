@@ -1,0 +1,10 @@
+package Spark
+//import scala.collection.mutable.Map
+
+object Map {
+  def main(args: Array[String]): Unit = {
+//    val src = Map(("Alice" -> 10), ("Bob" -> 3), ("Cindy" -> 8))
+    val src = Map(("Alice" ,10), ("Bob" , 3), ("Cindy" , 8))
+    
+  }
+}

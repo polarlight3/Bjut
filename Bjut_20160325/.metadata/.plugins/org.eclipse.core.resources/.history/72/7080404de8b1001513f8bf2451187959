@@ -1,0 +1,8 @@
+package Spark
+
+object LList {
+  def main(args: Array[String]): Unit = {
+    var li = List("kobe","curry","jamse")
+    li.foreach { println }
+  }
+}

@@ -1,0 +1,17 @@
+package Class
+
+trait Logger{
+  def sho(message: String){
+    println(message)
+  } 
+}
+
+trait TimeLogger extends Logger{
+  abstract override def show(message: String){
+    super.sho(new java.util.Date() + " " + message)
+  } 
+}
+
+object Trait2 {
+  
+}

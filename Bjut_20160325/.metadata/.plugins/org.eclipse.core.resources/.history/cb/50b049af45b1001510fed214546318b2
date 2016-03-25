@@ -1,0 +1,14 @@
+package Spark
+
+import scala.io.Source
+
+object WordCount {
+  def main(args: Array[String]): Unit = {
+//    val file = sc.textFile()
+    val file = Source.fromFile("/home/hadoop/Desktop/haha")
+    println(file)
+    //file.flatMap(line => line.split("\\s+")).map((_, 1)).reduceByKey(_+_).collect().foreach(println)
+    //file.flatMap().map((_, 1)).reduceByKey(_+_).collect().foreach(println)
+
+  }
+}

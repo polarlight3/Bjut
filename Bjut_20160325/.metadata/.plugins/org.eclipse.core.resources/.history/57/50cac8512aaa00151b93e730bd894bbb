@@ -1,0 +1,30 @@
+package Actor
+
+import scala.actors.OutputChannel
+import scala.actors.Actor
+import scala.actors.Actor._
+import scala.actors.Channel
+
+case class Compute (input:Seq[Int], result: OutputChannel[Int])
+
+class Computer extends Actor{
+  def act(){
+    while(true)
+      receive{
+        case "h" => println("hahahaha")
+      }
+  }
+}
+
+
+object Compute {
+  def main(args: Array[String]): Unit = {
+    val channel = new Channel[Int]
+    val computeActor: Computer = new Computer
+    computeActor ! 1
+    channel.receive{
+      case 1 => println("Successful!")
+    }
+     computeActor.start()
+    }
+}

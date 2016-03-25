@@ -1,0 +1,16 @@
+package Class
+
+class Person(nam: String, age: Int ){
+  private var name = nam
+  private var num = age
+  def show(){
+    println("name : " + name +  "\n num : " + num)
+  }
+}
+
+class Student(nam: String, nu)
+object Tea {
+  def main(args: Array[String]): Unit = {
+    
+  }
+}

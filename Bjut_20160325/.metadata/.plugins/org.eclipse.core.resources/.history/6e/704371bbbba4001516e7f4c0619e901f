@@ -1,0 +1,20 @@
+
+package Class
+
+abstract class person{
+  def id: Unit //abstract method
+  val num: Int //abstract parameter
+  def show(){
+    println("I'm kobe")
+  }
+}
+
+class student extends person{
+  def id = println("where amazing happen")
+  override def show(){
+    println("I'm lebron")
+  }
+}
+object Override extends App {
+ 
+}

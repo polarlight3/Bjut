@@ -1,0 +1,16 @@
+package Spark
+
+import scala.io.Source
+
+object Collec {
+  
+  def main(args: Array[String]): Unit = {
+    val file = Source.fromFile(file)
+    val t =  Array("a","b","c","d")
+    val p = {
+      
+    }
+    t.collect(pf)
+    
+  }
+}

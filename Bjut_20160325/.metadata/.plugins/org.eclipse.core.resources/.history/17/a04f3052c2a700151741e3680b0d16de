@@ -1,0 +1,21 @@
+package Class
+
+trait Lf{
+  def sho(message: String)
+  def warn(msg: String){
+    sho("WARN:" + msg)
+  }
+}
+
+trait TimeLf extends Lf{
+  abstract override def ww(message: String){
+    warn(message)
+  } 
+  override def sho(msg: String){
+    println(msg)
+  }
+}
+
+object Trait2 {
+  
+}

@@ -1,0 +1,15 @@
+package Spark
+import scala.collection.mutable._
+
+object Mapp {
+  def main(args: Array[String]): Unit = {
+    val sc:Map[String, Int] = Map("kobe" -> 24, "james" -> 23, "paul" -> 3)
+   // var sc2 = Map((10, "Alice"), (3, "Bob"), (8, "Cindy"))
+    for(a <- sc)   println(a)
+    println(sc("kobe"))
+    sc("james") = 6
+    println(sc)
+    
+    
+  }
+}

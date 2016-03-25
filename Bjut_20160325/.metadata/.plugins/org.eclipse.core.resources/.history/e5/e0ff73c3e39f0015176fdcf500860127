@@ -1,0 +1,14 @@
+package Class
+
+
+object Extends {
+  
+  def main(args: Array[String]): Unit = {
+		  val Red = Value(0,"Stop")
+		  val Yellow = Value(11)
+		  val Green = Value("go")
+				 
+		  println(Red)
+    
+  }
+}

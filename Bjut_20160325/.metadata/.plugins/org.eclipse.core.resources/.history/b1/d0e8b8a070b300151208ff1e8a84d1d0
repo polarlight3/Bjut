@@ -1,0 +1,11 @@
+package Spark
+
+import scala.io.Source
+
+object Collec {
+  def main(args: Array[String]): Unit = {
+    val t =  Array("a","b|","c","d")
+    
+    
+  }
+}

@@ -1,0 +1,15 @@
+package Class
+
+trait Lf{
+  def sho(message: String)
+}
+
+trait TimeLf extends Lf{
+  abstract override def sho(message: String){
+    super.sho(new java.util.Date() + " " + message)
+  } 
+}
+
+object Trait2 {
+  
+}

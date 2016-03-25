@@ -1,0 +1,27 @@
+package Actor
+
+import scala.actors.Actor._
+import scala.actors.Actor
+
+class HiActor extends Actor{
+  def act(){
+    while(true){
+      receive{
+        case "Hi" => println("hello")
+      }
+    }
+  }
+}
+
+object Lf{
+	def main(args: Array[String]): Unit = {
+			var actor1 = actor{
+			  receive{
+			    case "Hi" => println("What's wrong with you !\n")
+			  }
+			}
+			actor1.start()
+			actor1 ! "Hi"
+			actor1 ! "Hi"
+	}
+}

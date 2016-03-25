@@ -1,0 +1,26 @@
+package Spark
+
+import scala.collection.immutable.SortedMap
+//import scala.collection.mutable._
+
+object Mapp {
+  def main(args: Array[String]): Unit = {
+    var sc:Map[String, Int] = SortedMap("kobe" -> 24, "james" -> 23, "paul" -> 3)
+    val tt = sc
+    println(tt.equals(sc))
+    for((k, v) <- sc) println(k + " " + v)
+    for(k <- sc.keySet) print(k + " ")
+    println()
+    var lf =  for((k, v) <- sc) yield (v, k)
+    println(lf)
+   /* println(sc("kobe"))
+    println(sc)
+    sc += ("curry" -> 30)
+    println(sc)
+    sc -=  "james"
+    println(sc)
+    println(tt.equals(sc))*/
+    
+    
+  }
+}

@@ -1,0 +1,13 @@
+package Actor
+
+import scala.actors.Actor
+
+object HiActor extends Actor{
+  def act(){
+    while(true){
+      receive{
+        case "Hi" => println("hello")
+      }
+    }
+  }
+}

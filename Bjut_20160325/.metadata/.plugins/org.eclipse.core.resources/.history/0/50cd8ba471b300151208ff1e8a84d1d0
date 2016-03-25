@@ -1,0 +1,13 @@
+package Spark
+
+import scala.io.Source
+
+object Collec {
+  
+  def main(args: Array[String]): Unit = {
+    val file = Source.fromFile("/home/hadoop/Desktop/haha", "UTF-8")
+    file.close()
+    val t =  Array("a","b","c","d")
+    
+  }
+}

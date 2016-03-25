@@ -1,0 +1,32 @@
+package Chapter18
+
+import scala.collection.mutable.ArrayBuffer
+
+
+trait ListenerSupper{
+  type S <: Source
+  type E <: Event
+  type L <: Listener
+  trait Event{
+    var Source: S = _
+  }
+  
+  trait Listener{
+    def occurred(e : E) :Unit
+  }
+  
+  trait Source{
+    this: S =>
+      private val listeners = new ArrayBuffer[L]
+      def add(l : L){ listeners += l}
+      def remove(l : L){ listeners -= l}
+      def fire(e: E){
+        e.Source = this
+        for( l <- listeners) l.occurred(e)
+      }
+  }
+}
+
+object Button {
+    import ButtonModule._  
+}

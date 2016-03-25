@@ -1,0 +1,41 @@
+import org.json._
+    val jsobj = new JSONObject(str)
+    val stuList = jsobj.getJSONArray("Student")
+    val stuObj = stuList.getJSONObject(i)
+    val stu = new Student(stuObj.getString("Number"), stuObj.getString("Name"), stuObj.getInt("Balance"))
+style:
+{
+	"Student":
+	[
+		{"Number":"S201507001","Name":"Jack","Balance":"210"},
+		{"Number":"S201507002","Name":"Tom","Balance":"105"},
+		{"Number":"S201507003","Name":"Marry","Balance":"120"},
+		{"Number":"S201507004","Name":"Jerry","Balance":"180"},
+		{"Number":"S201507005","Name":"Kobe","Balance":"310"},
+		{"Number":"S201507006","Name":"James","Balance":"410"},
+		{"Number":"S201507007","Name":"lin","Balance":"110"},
+		{"Number":"S201507008","Name":"Wade","Balance":"190"}
+	]
+}
+
+
+
+
+import net.sf.json._
+
+    val json = JSONArray.fromObject(str)
+    val tt = json.getJSONObject(0)
+    println(tt.getString("Name"))
+style:
+[
+	{"Number":"S201507001","Name":"Jack","Balance":"210"},
+	{"Number":"S201507002","Name":"Tom","Balance":"105"},
+	{"Number":"S201507003","Name":"Marry","Balance":"120"},
+	{"Number":"S201507004","Name":"Jerry","Balance":"180"},
+	{"Number":"S201507005","Name":"Kobe","Balance":"310"},
+	{"Number":"S201507006","Name":"James","Balance":"410"},
+	{"Number":"S201507007","Name":"lin","Balance":"110"},
+	{"Number":"S201507008","Name":"Wade","Balance":"190"}
+]
+
+

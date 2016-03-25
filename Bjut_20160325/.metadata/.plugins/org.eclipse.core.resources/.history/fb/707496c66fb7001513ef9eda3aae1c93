@@ -1,0 +1,18 @@
+package Spark
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkConf
+
+object test {
+  def main(args: Array[String]): Unit = {
+
+    val str = "spark://localhost:7077"
+    var pat = "file:///home/hadoop/Desktop/result"
+    val conf = new SparkConf().setAppName("WCount").setMaster("local")
+    val sc = new SparkContext(conf)
+    val file = sc.textFile("hdfs://localhost:9000/test") 
+//    file.flatMap(_.split("\\s+")).map((_, 1)).reduceByKey(_+_).collect().foreach(println)
+    file.flatMap(_.split("\\s+")).map((_, 1)).reduceByKey(_+_).saveAsTextFile(pat)
+
+    sc.stop()
+  }
+}

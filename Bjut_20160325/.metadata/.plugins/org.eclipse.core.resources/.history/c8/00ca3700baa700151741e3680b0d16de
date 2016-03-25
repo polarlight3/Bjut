@@ -1,0 +1,29 @@
+package Class
+
+trait Logger{
+  def log(message: String){
+    println(message)
+  } 
+}
+
+trait Logger1{
+  def log1(message: String){
+    println(message)
+  } 
+}
+
+trait Logger2{
+  def log2(message: String){
+    println(message)
+  } 
+}
+
+object Trait extends Logger with Logger1 with Logger2{
+  def show(me: String){
+    println("the massage is:")
+    log(me)
+  }
+  def main(args: Array[String]): Unit = {
+    Trait.log("i'm a genius")
+  }
+}

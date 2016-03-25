@@ -1,0 +1,11 @@
+package XML
+import scala.xml._
+
+object Node{
+  def main(args: Array[String]): Unit = {
+    val item =  <dl><dt>kobe </dt><dt>james </dt><dd>jorden </dd><dt> james</dt></dl>
+    val ll = item \\ "dt"
+    val
+    println(item.text + "\n");
+    println(ll.text)
+  }

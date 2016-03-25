@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 5 packages to &apos;Text/src&apos;&#x0A;- Original project: &apos;Scala&apos;&#x0A;- Destination element: &apos;Text/src&apos;&#x0A;- Original elements:&#x0A;     Scala/src/Actor&#x0A;     Scala/src/ReadWrite&#x0A;     Scala/src/Chapter18&#x0A;     Scala/src/Class&#x0A;     Scala/src/Reset&#x0A;- Update references to refactored element" description="Move packages" destination="=Text/src" element1="/src&lt;Actor" element2="/src&lt;ReadWrite" element3="/src&lt;Chapter18" element4="/src&lt;Class" element5="/src&lt;Reset" flags="589830" fragments="5" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1452163038551" version="1.0"/>
+</session>

@@ -1,0 +1,10 @@
+package Spark
+import org.apache.spark.SparkContext
+object test {
+  def main(args: Array[String]): Unit = {
+    val sc = new SparkContext()
+    val file = sc.textFile("hdfs://localhost:9000/test") 
+//    file.flatMap(line => line.split("\\s+")).map((_, 1)).re
+    file.flatMap(_.split("\\s+")).map((_, 1)).reduceByKey(_+_).collect().foreach(println)
+  }
+}
