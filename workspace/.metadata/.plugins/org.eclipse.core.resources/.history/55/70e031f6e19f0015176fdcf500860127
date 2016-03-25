@@ -1,7 +1,0 @@
-
-
-package Class
-
-object Extends extends App{
-  println("This is test.")
-}

@@ -1,8 +1,0 @@
-
-
-package Class
-
-object Extends extends Enumeration{
-  val Red, Yellow, Green = Value
-  println("This is test.")
-}

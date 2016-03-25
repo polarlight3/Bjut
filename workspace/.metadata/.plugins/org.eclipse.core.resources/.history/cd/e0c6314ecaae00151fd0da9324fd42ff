@@ -1,7 +1,0 @@
-package spark
-object Comput {
-  def main(args: Array[String]): Unit = {
-
-       
-  }
-}

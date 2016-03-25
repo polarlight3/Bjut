@@ -1,7 +1,0 @@
-package Reset
-
-object Pair {
-  def main(args: Array[String]): Unit = {
-    
-  }
-}
