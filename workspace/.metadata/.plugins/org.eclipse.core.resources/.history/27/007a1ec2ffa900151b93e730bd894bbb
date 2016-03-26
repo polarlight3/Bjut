@@ -1,7 +1,0 @@
-package Actor
-
-import scala.actors.Actor
-
-object HiActor extends Actor{
-  
-}

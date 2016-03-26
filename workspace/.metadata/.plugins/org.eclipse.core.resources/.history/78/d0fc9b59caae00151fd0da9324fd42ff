@@ -1,8 +1,0 @@
-package spark
-object Comput {
-  def main(args: Array[String]): Unit = {
-       for(i <- 1 to 5) print(i + " ") 
-       for(i <- 1 until 5) print(i + " ") 
-  }
-  
-}

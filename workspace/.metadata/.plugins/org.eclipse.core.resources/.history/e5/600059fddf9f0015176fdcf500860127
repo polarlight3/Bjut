@@ -1,7 +1,0 @@
-
-
-package Class
-
-object Extends {
-  println("This is test.")
-}
