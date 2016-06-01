@@ -1,0 +1,35 @@
+<project name="hadoop" default="test">
+	<property name="srcdirjava" value="srcjava"/>
+	<property name="srcdirtest" value="srctest"/>
+	<property name="classdirjava" value="classjava"/>
+	<property name="classdirtest" value="classtest"/>
+	<target name="init">
+		<mkdir dir="${classdirjava}"/>
+		<mkdir dir="${classdirtest}"/>
+	</target>
+	<target name="compilej" depends="init">
+		<javac destdir="${classdirjava}" srcdir="${srcdirjava}"/>
+	</target>
+	<target name="compilet" depends="compilej">
+		<javac destdir="${classdirtest}" srcdir="${srcdirtest}">
+			<classpath>
+				<pathelement path="/home/hadoop/workspace/ant/lib/hamcrest-core-1.3.jar"/>
+				<pathelement path="/home/hadoop/workspace/ant/lib/junit-4.11.jar"/>
+				<pathelement path="${classdirjava}"/>		
+			</classpath>
+		</javac>
+	</target>
+	<target name="compile" depends="compilej, compilet"/>
+	<target name="test" depends="compile">
+		<junit printsummary="yes" haltonerror="yes" haltonfailure="yes" fork="yes">
+			<formatter type="plain" usefile="false"/>
+			<test name="Junit.CalculatorTest"/>
+			<classpath>
+				<pathelement path="/home/hadoop/workspace/ant/lib/hamcrest-core-1.3.jar"/>
+				<pathelement path="/home/hadoop/workspace/ant/lib/junit-4.11.jar"/>
+				<pathelement path="${classdirjava}"/>
+				<pathelement path="${classdirtest}"/>
+			</classpath>
+		</junit>
+	</target>
+</project>
